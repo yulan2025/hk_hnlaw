@@ -1,18 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<svg version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="41px" height="32px" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <filter x="876px" y="256px" width="41px" height="32px" filterUnits="userSpaceOnUse" id="filter117">
-      <feOffset dx="5" dy="5" in="SourceAlpha" result="shadowOffsetInner" />
-      <feGaussianBlur stdDeviation="2.5" in="shadowOffsetInner" result="shadowGaussian" />
-      <feComposite in2="shadowGaussian" operator="atop" in="SourceAlpha" result="shadowComposite" />
-      <feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.215686274509804 0  " in="shadowComposite" />
-    </filter>
-    <g id="widget118">
-      <image preserveAspectRatio="none" style="overflow:visible" width="31" height="22" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAWCAYAAAA4oUfxAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFTSURBVEhLzZaxSsNQFIa/czoUiktAkCJ06uJQhNKxm8/g4NRH6bMEBF9EcAmFjnYtksFiEWIcWnMcbhPSqw6F5OK35fw/nNw/l5wj/MGKYVfIx3tkJDAQiAx6vs9HIDfYgqVgywwWE9Lc9+G8P3nm8rrAZoJEvnYqBhlofMU68bWj5iuG3YLPW+CmXm8Gecz4eqinUDV3jfM5SL/yN88mo5iXL6Bl1Z241cYA52d07soH5fCN24n6N2x66Ie6uG3mW9qkwGYrhl0V8nETt/oUBImEfKx7ZOSLIdgjIxUY+EIIBAYqEDTyEoFIDev4QigUePOLITDYKvDiC2GwVMGWfjkMttQMFm7yhMMgy2Ch7ievsW9oF40npLkCXLFODJ58SztYUs72aqp9UNwDmyNf49h7xK5K+WiZSOj33Mizab3eDJZE7OILXqv79X/WqDohFshvSGCBNcIFWj8AAAAASUVORK5CYII=" x="876px" y="256px" />
-    </g>
-  </defs>
-  <g transform="matrix(1 0 0 1 -876 -256 )">
-    <use xlink:href="#widget118" filter="url(#filter117)" />
-    <use xlink:href="#widget118" />
+<svg version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="994px" height="2px" xmlns="http://www.w3.org/2000/svg">
+  <g transform="matrix(1 0 0 1 -485 -710 )">
+    <path d="M 485 710.5  L 1478 710.5  " stroke-width="1" stroke="#7f7f7f" fill="none" />
   </g>
 </svg>
