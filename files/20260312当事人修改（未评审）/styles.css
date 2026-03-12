@@ -1,0 +1,49 @@
+﻿body {
+  margin:0px;
+  background-image:none;
+  position:relative;
+  left:-37px;
+  width:479px;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:left;
+}
+.form_sketch {
+  border-color:transparent;
+  background-color:transparent;
+}
+#base {
+  position:absolute;
+  z-index:0;
+}
+#u1241_img {
+  border-width:0px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:489px;
+  height:270px;
+}
+#u1241 {
+  border-width:0px;
+  position:absolute;
+  left:37px;
+  top:49px;
+  width:479px;
+  height:260px;
+  display:flex;
+  font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑', sans-serif;
+  font-style:normal;
+}
+#u1241 .text {
+  position:absolute;
+  align-self:flex-start;
+  padding:10px 10px 10px 10px;
+  box-sizing:border-box;
+  width:100%;
+}
+#u1241_text {
+  border-width:0px;
+  word-wrap:break-word;
+  text-transform:none;
+}
