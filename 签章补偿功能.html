@@ -54,7 +54,7 @@
       <div id="u0" class="ax_default sticky_3">
         <img id="u0_img" class="img " src="images/签章补偿功能/regen/u0.svg"/>
         <div id="u0_text" class="text ">
-          <p><span style="font-family:'Nunito Sans Bold', 'Nunito Sans Regular', 'Nunito Sans', sans-serif;font-weight:700;color:#333333;">20260324签章失败处理逻辑 PRD（电脑端和移动端同步修改，原型只出电脑端，移动端参照电脑端改）</span></p><p><span style="font-family:'Nunito Sans Bold', 'Nunito Sans Regular', 'Nunito Sans', sans-serif;font-weight:700;color:#333333;">涉及签章的文书见钉钉文档</span></p><p><span style="font-family:'Nunito Sans Bold', 'Nunito Sans Regular', 'Nunito Sans', sans-serif;font-weight:700;color:#333333;">https://alidocs.dingtalk.com/i/nodes/Y1OQX0akWmlARkKQt3kPvD6m8GlDd3mE?utm_scene=team_space</span></p><p><span style="font-family:'Nunito Sans Bold', 'Nunito Sans Regular', 'Nunito Sans', sans-serif;font-weight:700;color:#333333;">《20251013海口WPS改造》sheet</span></p><p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑', sans-serif;font-weight:700;color:#000000;">一、直接签章类型文书（不用审批、文书完成后即签章）</span></p><ul><li style=""><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;">执法人员提交文书后，页面返回案件办理页，系统同步判断签章结果。签章成功则文书状态变为已完成；签章失败则文书状态变为签章失败，并弹框提示（见右上角示意）。</span></li><li style=""><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;">签章失败文书的后续操作权限（修改、作废、再次发起）与同类型已完成状态文书一致。</span></li></ul><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑', sans-serif;font-weight:700;color:#000000;">二、签章审批类型文书（文书提交后需签章审批人审批完成后签章）</span></p><ul><li style=""><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;">审批人完成审批后，页面返回案件审批页，系统同步判断签章结果。签章成功则文书状态变为审批通过；签章失败则文书状态变为签章失败，并弹框提示（见右上角示意）。</span></li><li style=""><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;">签章失败文书的后续操作权限（修改、作废、再次发起）与同类型审批通过状态文书一致。。</span></li></ul><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑', sans-serif;font-weight:700;color:#000000;">三、告知书、听证告知书（告知类/听证告知类有关事项审批通过，文书自动签章）</span></p><p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑', sans-serif;font-weight:700;color:#000000;">1、先审批，后制作文书</span></p><ul><li style=""><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;">&nbsp;执法人员提交告知书 / 听证告知书后，页面返回案件办理页，系统同步判断签章结果。签章成功则文书状态变为已完成；签章失败则文书状态变为签章失败，同时触发两处提示：弹框提示（右上角示意）及已制作文书列表标题下的提示信息（右下角示意）。</span></li></ul><p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑', sans-serif;font-weight:700;color:#000000;">2、先制作文书，后审批</span></p><ul><li style=""><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;">告知类/听证告知类有关事项审批表审批通过前，告知书/听证告知书状态为待签章，已制作列表显示的状态标签为黄色。——在20260312批次</span></li><li style=""><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;">最后一位审批人完成审批后，页面返回案件审批页，签章结果判断逻辑以及弹框提醒同情形1。</span></li></ul><p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑', sans-serif;font-weight:700;color:#000000;">3、签章失败/待签章状态的连锁影响</span></p><ul><li style=""><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;">允许在签章失败或待签章状态下重新发起同类文书，新文书提交后原文书自动变为作废</span></li><li style=""><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;">若当前案件中原&quot;审批通过&quot;状态的告知类 / 听证告知类有关事项审批表变为已作废，则处罚决定书 / 不予处罚决定书状态自动更新为待签章。</span></li></ul><p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑', sans-serif;font-weight:700;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑', sans-serif;font-weight:700;color:#000000;">四、处罚决定书/不予处罚决定书（处理决定审批表审批通过，文书自动签章）</span></p><ul><li style=""><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;">除了依赖的审批文书与告知书不同，其他逻辑相同</span></li></ul><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑', sans-serif;font-weight:700;color:#000000;">五、公共逻辑</span></p><ul><li style=""><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;">签章失败不影响案件进入下一阶段或归档。待签章则会阻断流程，案件办理页上部显示对应提示语（见右下角示意）。</span></li><li style=""><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;">已制作文书列表中若存在签章失败的文书，在&quot;已制作文书&quot;标题下方显示提示信息（见右下角示意）。</span></li><li style=""><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;">⚠️ 归档后如需补充签章，需联系开发团队处理。</span></li></ul><p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑', sans-serif;font-weight:700;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑', sans-serif;font-weight:700;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑', sans-serif;font-weight:700;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑', sans-serif;font-weight:700;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑', sans-serif;font-weight:700;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑', sans-serif;font-weight:700;color:#000000;"><br></span></p>
+          <p><span style="font-family:'Nunito Sans Bold', 'Nunito Sans Regular', 'Nunito Sans', sans-serif;font-weight:700;color:#333333;">20260324签章失败处理逻辑 PRD（电脑端和移动端同步修改，原型只出电脑端，移动端参照电脑端改）</span></p><p><span style="font-family:'Nunito Sans Bold', 'Nunito Sans Regular', 'Nunito Sans', sans-serif;font-weight:700;color:#333333;">涉及签章的文书见钉钉文档</span></p><p><span style="font-family:'Nunito Sans Bold', 'Nunito Sans Regular', 'Nunito Sans', sans-serif;font-weight:700;color:#333333;">https://alidocs.dingtalk.com/i/nodes/Y1OQX0akWmlARkKQt3kPvD6m8GlDd3mE?utm_scene=team_space</span></p><p><span style="font-family:'Nunito Sans Bold', 'Nunito Sans Regular', 'Nunito Sans', sans-serif;font-weight:700;color:#333333;">《20251013海口WPS改造》sheet</span></p><p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑', sans-serif;font-weight:700;color:#000000;">一、直接签章类型文书（不用审批、文书完成后即签章）</span></p><ul><li style=""><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;">执法人员提交文书后，页面返回案件办理页，系统同步判断签章结果。签章成功则文书状态变为已完成；签章失败则文书状态变为签章失败，并弹框提示（见右上角示意）。</span></li><li style=""><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;">签章失败文书的后续操作权限（修改、作废、再次发起）与同类型已完成状态文书一致。</span></li></ul><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑', sans-serif;font-weight:700;color:#000000;">二、签章审批类型文书（文书提交后需签章审批人审批完成后签章）</span></p><ul><li style=""><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;">审批人完成审批后，页面返回案件审批页，系统同步判断签章结果。签章成功则文书状态变为审批通过；签章失败则文书状态变为签章失败，并弹框提示（见右上角示意）。</span></li><li style=""><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;">签章失败文书的后续操作权限（修改、作废、再次发起）与同类型审批通过状态文书一致。。</span></li></ul><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑', sans-serif;font-weight:700;color:#000000;">三、告知书、听证告知书（告知类/听证告知类有关事项审批通过，文书自动签章）</span></p><p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑', sans-serif;font-weight:700;color:#000000;">1、先审批，后制作文书</span></p><ul><li style=""><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;">&nbsp;执法人员提交告知书 / 听证告知书后，页面返回案件办理页，系统同步判断签章结果。签章成功则文书状态变为审批通过；签章失败则文书状态变为签章失败，同时触发弹框提示（右上角示意）。</span></li></ul><p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑', sans-serif;font-weight:700;color:#000000;">2、先制作文书，后审批</span></p><ul><li style=""><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;">告知类/听证告知类有关事项审批表审批通过前，告知书/听证告知书状态为待签章，已制作列表显示的状态标签为黄色。——在20260312批次</span></li><li style=""><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;">最后一位审批人完成审批后，页面返回案件审批页，签章结果判断逻辑以及弹框提醒同情形1。</span></li></ul><p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑', sans-serif;font-weight:700;color:#000000;">3、签章失败/待签章状态的连锁影响</span></p><ul><li style=""><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;">允许在签章失败或待签章状态下重新发起同类文书，新文书提交后原文书自动变为作废</span></li><li style=""><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;">若当前案件中原“审批通过”状态的告知类 / 听证告知类有关事项审批表变为已作废，则告知书/听证告知书状态自动更新为待签章。</span></li></ul><p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑', sans-serif;font-weight:700;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑', sans-serif;font-weight:700;color:#000000;">四、处罚决定书/不予处罚决定书（处理决定审批表审批通过，文书自动签章）</span></p><ul><li style=""><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;">除了依赖的审批文书与告知书不同，其他逻辑相同</span></li><li style=""><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;">特别提示：处罚决定书在签章失败或待签章状态下，允许重新发起文书；新文书提交后，原文书自动变为已作废。</span></li></ul><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑', sans-serif;font-weight:700;color:#000000;">五、公共逻辑</span></p><ul><li style=""><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;">签章失败不影响案件进入下一阶段或归档。</span></li><li style=""><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;">列表中存在任意一份待签章文书即阻断整个阶段，案件办理页上部显示对应提示语（见右下角示意）。</span></li><li style=""><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;">已制作文书列表中若存在签章失败的文书，在“已制作文书”标题下方显示提示信息（见右下角示意）。若多文书签章失败合并为一个提示框展示，中间用顿号隔开。</span></li><li style=""><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;">⚠️ 归档后如需补充签章，需联系开发团队处理。</span></li><li style=""><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;">已制作文书列表中，签章失败的文书左侧展示“⋮”操作按钮，点击后显示“签章”选项。点击“签章”后：若签章成功，toast 提示“签章成功！”，文书状态更新为审批通过/已完成；若签章再次失败，触发右上角弹框提示。</span></li></ul><p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑', sans-serif;font-weight:700;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑', sans-serif;font-weight:700;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑', sans-serif;font-weight:400;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑', sans-serif;font-weight:700;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑', sans-serif;font-weight:700;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑', sans-serif;font-weight:700;color:#000000;"><br></span></p><p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑', sans-serif;font-weight:700;color:#000000;"><br></span></p>
         </div>
       </div>
 
@@ -86,7 +86,7 @@
       <div id="u4" class="ax_default _默认样式">
         <div id="u4_div" class=""></div>
         <div id="u4_text" class="text ">
-          <p><span>签章服务器异常导致《XX文书》签章失败，请执法人员至案件办理页的已制作文书列表，点击左侧 &quot;&nbsp;&nbsp; &quot; 下的 &quot;签章&quot; 按钮重试！</span></p>
+          <p style="font-size:16px;"><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑', sans-serif;font-weight:700;">签章服务器异常导致《XX文书》签章失败，请执法人员至案件办理页的已制作文书列表，点击左侧 &quot; </span><span style="font-family:'微软雅黑', sans-serif;font-weight:400;font-size:14px;color:#000000;">⋮</span><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑', sans-serif;font-weight:700;">&nbsp; &quot; 下的 &quot;签章&quot; 按钮重试！</span></p>
         </div>
       </div>
 
@@ -163,13 +163,13 @@
       </div>
 
       <!-- 警告提示 (组合) -->
-      <div id="u14" class="ax_default" data-label="警告提示" data-left="2539" data-top="735" data-width="335" data-height="67" layer-opacity="1">
+      <div id="u14" class="ax_default" data-label="警告提示" data-left="2539" data-top="735" data-width="335" data-height="94" layer-opacity="1">
 
-        <!-- 警告提示 (矩形) -->
+        <!-- 警告提示 (形状) -->
         <div id="u15" class="ax_default _默认样式1" data-label="警告提示">
-          <div id="u15_div" class=""></div>
+          <img id="u15_img" class="img " src="images/签章补偿功能/regen/警告提示_u15.svg"/>
           <div id="u15_text" class="text ">
-            <p><span>《XX文书》、《XX文书》签章失败（签章服务器异常），请在在已制作文书列表找到该文书，点击左侧 &quot;&nbsp;&nbsp; &quot; 按钮下的 &quot;签章&quot; 按钮重试。</span></p>
+            <p><span style="font-family:'微软雅黑 Regular', '微软雅黑', sans-serif;font-weight:400;">《XX文书》、《XX文书》签章失败（签章服务器异常），请在在已制作文书列表找到该文书，点击左侧 &quot; </span><span style="font-family:'微软雅黑', sans-serif;font-weight:400;">⋮</span><span style="font-family:'微软雅黑 Regular', '微软雅黑', sans-serif;font-weight:400;">&nbsp; &quot; 按钮下的 &quot;签章&quot; 按钮重试。</span></p><p><span style="font-family:'微软雅黑 Regular', '微软雅黑', sans-serif;font-weight:400;">归档后将无法补签；《行政处罚决定书》未签章将不能公示。</span></p>
           </div>
         </div>
 
@@ -190,99 +190,91 @@
         </div>
       </div>
 
-      <!-- Unnamed (图片 ) -->
-      <div id="u18" class="ax_default image1">
-        <img id="u18_img" class="img " src="images/签章补偿功能/regen/u18.png"/>
-        <div id="u18_text" class="text " style="display:none; visibility: hidden">
-          <p></p>
-        </div>
-      </div>
-
       <!-- Unnamed (矩形) -->
-      <div id="u19" class="ax_default _形状">
-        <div id="u19_div" class=""></div>
-        <div id="u19_text" class="text ">
+      <div id="u18" class="ax_default _形状">
+        <div id="u18_div" class=""></div>
+        <div id="u18_text" class="text ">
           <p><span>告知阶段</span></p>
         </div>
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u20" class="ax_default _文本段落">
-        <div id="u20_div" class=""></div>
-        <div id="u20_text" class="text ">
+      <div id="u19" class="ax_default _文本段落">
+        <div id="u19_div" class=""></div>
+        <div id="u19_text" class="text ">
           <p><span>行政处罚告知书</span></p>
         </div>
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u21" class="ax_default _形状">
-        <div id="u21_div" class=""></div>
-        <div id="u21_text" class="text ">
+      <div id="u20" class="ax_default _形状">
+        <div id="u20_div" class=""></div>
+        <div id="u20_text" class="text ">
           <p><span>签章失败</span></p>
         </div>
       </div>
 
       <!-- Unnamed (图片 ) -->
-      <div id="u22" class="ax_default image1">
-        <img id="u22_img" class="img " src="images/签章补偿功能/regen/u18.png"/>
-        <div id="u22_text" class="text " style="display:none; visibility: hidden">
+      <div id="u21" class="ax_default image1">
+        <img id="u21_img" class="img " src="images/签章补偿功能/regen/u21.png"/>
+        <div id="u21_text" class="text " style="display:none; visibility: hidden">
           <p></p>
         </div>
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u23" class="ax_default _形状">
-        <div id="u23_div" class=""></div>
-        <div id="u23_text" class="text ">
+      <div id="u22" class="ax_default _形状">
+        <div id="u22_div" class=""></div>
+        <div id="u22_text" class="text ">
           <p><span>签章</span></p>
         </div>
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u24" class="ax_default _文本段落">
-        <div id="u24_div" class=""></div>
-        <div id="u24_text" class="text ">
+      <div id="u23" class="ax_default _文本段落">
+        <div id="u23_div" class=""></div>
+        <div id="u23_text" class="text ">
           <p><span>行政处罚告知书</span></p>
         </div>
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u25" class="ax_default _形状">
-        <div id="u25_div" class=""></div>
-        <div id="u25_text" class="text ">
+      <div id="u24" class="ax_default _形状">
+        <div id="u24_div" class=""></div>
+        <div id="u24_text" class="text ">
           <p><span>待签章</span></p>
         </div>
       </div>
 
       <!-- Unnamed (图片 ) -->
+      <div id="u25" class="ax_default image1">
+        <img id="u25_img" class="img " src="images/签章补偿功能/regen/u25.png"/>
+        <div id="u25_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片 ) -->
       <div id="u26" class="ax_default image1">
-        <img id="u26_img" class="img " src="images/签章补偿功能/regen/u26.png"/>
+        <img id="u26_img" class="img " src="images/签章补偿功能/regen/u25.png"/>
         <div id="u26_text" class="text " style="display:none; visibility: hidden">
           <p></p>
         </div>
       </div>
 
-      <!-- Unnamed (图片 ) -->
-      <div id="u27" class="ax_default image1">
-        <img id="u27_img" class="img " src="images/签章补偿功能/regen/u26.png"/>
-        <div id="u27_text" class="text " style="display:none; visibility: hidden">
-          <p></p>
-        </div>
-      </div>
-
       <!-- Unnamed (矩形) -->
-      <div id="u28" class="ax_default _文本段落">
-        <div id="u28_div" class=""></div>
-        <div id="u28_text" class="text ">
+      <div id="u27" class="ax_default _文本段落">
+        <div id="u27_div" class=""></div>
+        <div id="u27_text" class="text ">
           <p><span>这里改成“未完成”、“审批中”、“待签章”</span></p>
         </div>
       </div>
 
-      <!-- Unnamed (图片 ) -->
-      <div id="u29" class="ax_default image1">
-        <img id="u29_img" class="img " src="images/签章补偿功能/regen/u18.png"/>
-        <div id="u29_text" class="text " style="display:none; visibility: hidden">
-          <p></p>
+      <!-- Unnamed (矩形) -->
+      <div id="u28" class="ax_default sticky_3">
+        <img id="u28_img" class="img " src="images/签章补偿功能/regen/u28.svg"/>
+        <div id="u28_text" class="text ">
+          <p><span>若存在签章失败的《行政处罚决定书》，以上提示框才显示“；《行政处罚决定书》未签章将不能公示”这段文字。</span></p>
         </div>
       </div>
     </div>
